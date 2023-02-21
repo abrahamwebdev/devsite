@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+html {
+    font-size: 65.5%;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.btn {
+    border: 0;
+    border-radius: 0.25rem;
+    background: #89c402;
+    color: white;
+    font-family: -system-ui, sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0.75rem 0.75rem;
+    margin: 0.25rem;
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 1rem;
+    background-color: #ffffff;
+    /* color:#1a1a1f; */
+
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2.7rem;
+}
+.nav-item-first {
+    margin-left: 3rem;
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #1a1a1f;
+}
+
+.nav-link:hover , .nav-logo:hover{
+    text-decoration: underline;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #1a1a1f;
+}
+.nav-logo-micro img {
+width: 4.5rem;
+padding: 1rem 2rem 0.5rem 0.25rem;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2px 2px 2px 2px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+
+  }
+
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  input[type="text"] {
+    width: 120px;
+    height: 28px;
+}
+
+.hero {
+    
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 10rem;
+    
+    background: url("./assets/Desktop-hero_jan1.jfif");
+    background-position: center center;
+    background-size: contain;
+    height: 75vh;
+    display: flex;
+
+
+}
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+    width: 50%;
+}
+.hero-heading {
+    font-size: 37px;
+    font-weight: 500;
+}
+.hero-subheading {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2rem 0rem;
+    color:#0078d4
+}
+.hero-text {
+    font-size: 16px;
+    padding: 2rem 0rem;
+
+}
+
+.hero-btns {
+    padding: 2rem 0rem;
+
+}
+.btn-get-started {
+    border: 0;
+    border-radius: 2px;
+    background: #0078d4;
+    color: white;
+    font-size: 16px;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0.75rem 0.75rem;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 16px;
+}
+.btn-try-azure {
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0.6rem 0.75rem;
+    font-weight: 600;
+    margin-left: 3rem;
+
+}
+.azure-banner {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: #243a5e;
+    height: 10vh;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #50e6ff;
+}
+
+.azure-banner:hover {
+    background-color: #000000;
+    color: #3aa0fa;
+}
+
+.cloud-banner {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: white;
+    height: 15vh;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+.cloud-features {
+    height: 70vh;
+    /* background-color: #ffffff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 6rem;
+}
+
+.cloud-migrate {
+   
+    height:100%;
+    width: 48%; 
+    background-image: url("./assets/ez-button-01-dmwl.jpg");
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    
+}
+.cloud-migrate-flex{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-between; */
+    align-items: flex-start;
+    align-content: flex-end;
+}
+.cloud-migrate-tag{
+    margin-top: 30rem;
+}
+.cloud-migrate-flex p {
+    font-size: 16px;
+}
+
+.cloud-migrate-flex a {
+    font-size: 19px;
+    font-weight: 600;
+    color: #0067b8;
+}
+
+.cloud-build-explore {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 50%; 
+    column-gap: 0.5rem;
+}
+.cloud-build-explore-child {
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+
+}
+
+.cloud-build-explore-parent {
+    height: 47%;
+}
+.cloud-build-explore-child a {
+    font-size: 19px;
+    font-weight: 600;
+    color: #0067b8;
+}
+
+.cloud-build-explore-child p {
+    font-size: 16px;
+}
+.cloud-build-explore-child-padding {
+    padding-left: 4rem;
+    padding-right: 3rem;
+}
+.azure-overview {
+display: flex;
+align-items: center; 
+    justify-content: center;
+    height: 8vh;
+}
+.azure-overview p {
+    font-size: 16px;
+}
+.get-an-overview {
+    cursor: pointer;
+    border: 2px solid #0078d4;
+    background-color: transparent;
+    color: #0078d4;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0.6rem 0.75rem;
+    font-weight: 600;
+    margin-left: 3rem;
+}
+
+.customers-are-innovating {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 15vh;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.azure-customers {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 35vh;
+}
+
+.azure-customers img {
+    padding: 0rem 3rem;
+}
+.accelerate {
+    background-color: #f8f9fa;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+
+    
+}
+.accelerate-image {
+    padding: 0rem 3rem;
+}
+.accelerate-child {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+    height: 20vh;
+    width: 40vw;
+    padding-left: 10rem;
+}
+.accelerate-child a {
+    cursor: pointer;
+    border: 2px solid #0078d4;
+    background-color: transparent;
+    color: #0078d4;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0.6rem 0.75rem;
+    font-weight: 600;
+}
+.accelerate-child p {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.home-desktop {
+    height:100vh;
+    width: auto; 
+    background-image: url("./assets/home_desktop.jpg");
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+.desktop-grid-container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 1fr 5fr 6fr;
+    grid-template-columns: 1fr 6fr 5fr;
+}
+.desktop-child {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: black;
+    padding: 3rem 3rem;
+}
+
+.desktop-child-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    
+}
+.dev-stories {
+    display: flex;
+    padding-top: 1rem;
+}
+.watch-the-story {
+    border: 0;
+    border-radius: 0.25rem;
+    background: #0078d4;
+    color: white;
+    font-family: -system-ui, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+.dev-stories-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+}
+
+.cards {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+  }
+  .card {
+    flex: 0 0 31%;
+    margin: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px 0px  rgba(0,0,0,0.3);
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text p {
+    font-size: 16px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .card .text div{
+    /* margin-top: 1rem; */
+    margin-bottom: 2rem;
+  }
+  .card .text p:nth-child(1) {
+    font-size: 14px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .card .text a {
+    font-size: 16px;
+    color: #0067b8;
+    font-weight: 600;
+    /* margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem; */
+    }
+
+    .happening-on-azure {
+        background-color: #f8f9fa;
+
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 4rem;
+    }
+
+
+    .colored-cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 5rem 8rem;
+      }
+      .colored-card {
+        flex: 0 0 31%;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #000000;
+        padding-bottom: 2rem;
+
+      } 
+      .colored-card img {
+        max-width:35px;
+      }
+      .image-div {
+        padding-top: 2rem;
+        padding-left: 2rem;
+      }
+      .colored-card .text {
+        padding: 0 20px 20px;
+        font-size: 16px;
+      }
+      .colored-card .text a {
+        color: white;
+      }
+      .colored-card .text div:nth-child(1)  {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .colored-card .text div:nth-child(1) a {
+        text-decoration: underline;
+
+      }
+
+      .colored-card:nth-child(1) {
+        background-color: #243a5e;
+      }
+      .colored-card:nth-child(2) {
+        background-color: #000000;
+      }
+       .colored-card:nth-child(3) {
+        background-color: #0062ad;
+      }
+
+footer {
+    height: 100vh;
+    background-color: #f4f5f6;
+}
+.get-azure-mobile-app {
+    display: flex;
+    padding: 4rem 4rem;
+    align-items: center;
+}
+.get-azure-mobile-app img {
+    width: 25px;
+}
+
+.get-azure-mobile-app div:nth-child(2) {
+    display: flex;
+} 
+.get-azure-mobile-app-parent{
+    display: flex;
+    background-color: #eaebec;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+}
+
+.get-azure-mobile-app-child {
+    padding:0rem 1rem ;
+}
+.get-azure-mobile-app-child p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4c4c51;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.footer-link-section {
+    flex: 0 0 15%;
+    margin: 10px;
+    
+}
+
+.footer-link-section .text {
+    padding: 0 20px 20px;
+
+}
+
+.footer-link-section .text p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1f;
+}
+
+.footer-link-section .text a {
+    font-size: 12px;
+    color: #1a1a1f;
+}
+.footer-link-section .text a:hover {
+    text-decoration: underline;
+}
+.footer-link-section .text div {
+    padding-top: 1.5rem;
+
+}
+
+.footer-final {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+.footer-final-right {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.languages p {
+    font-size: 16px;
+    padding-bottom: 1rem;
+    color: #1a1a1f;
+
+}
+.languages select {
+    font-size: 14px;
+    color: #1a1a1f;
+    padding: 0.5rem 2rem;
+}
+
+.footer-final-right a{
+    font-size: 12px;
+    color: #1a1a1f;
+}
+
+.footer-final-right a:hover{
+    text-decoration: underline;
+}
+.footer-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+.footer-bottom a{
+    font-size: 12px;
+    color: #1a1a1f;
+}
+.footer-bottom a:hover{
+    text-decoration: underline;
+
+}
+.footer-bottom div{
+    padding-left: 2rem;
+}
+
+
+.nhs-azure {
+    height:80vh;
+    width: auto; 
+    background-image: url("./assets/nhs-home-customerstory.jpg");
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.nhs-azure-grid-container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 50% 40% 10%;
+    grid-template-columns: 5% 55% 40%;
+}
+.nhs-azure-child  {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: black;
+    padding: 3rem 3rem;
+}
+.nhs-azure-child p {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+.nhs-azure-child a {
+    font-size: 16px;
+    color: #50e6ff;
+    font-weight: 600;
+}
+.nhs-azure-child div{
+    padding-top: 1.5rem;
+}
+
+.start-putting {
+    height: 10vh;
+    padding:7rem 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.products-and-services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+    height: 90vh;
+}
+
+.products-services-sidebar {
+    width: 1000px;
+}
+.products-services-sidebar a {
+    color: #505050;
+    font-size: 16px;
+    font-weight: 600;
+}
+.products-services-sidebar div {
+    padding: 1rem 1rem;
+}
+
+.products-services-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.products-services-card {
+    flex: 0 0 250px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 7px 0px, rgba(0, 0, 0, 0.11) 0px 1px 2px 0px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+.products-services-card img {
+    max-width: 40px;
+    min-width: 40px;
+  }
+  .products-services-card .text {
+    /* padding: 0 20px 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products-services-card .text p{
+    font-size: 16px;
+    padding: 2rem 2rem;
+
+  }
+
+  .products-services-card .text a{
+    font-size: 16px;
+    color: #0067b8;
+    font-weight: 500;
+    text-decoration: underline;
+
+  }
+
+  .products-services-card div:nth-child(1) {
+    padding:1rem 10rem;
+  }
+
+  .products-services-card:nth-child(3) p {
+    margin-bottom: 2rem;
+  }
+
+  .products-services-card:nth-child(5) p {
+    margin-bottom: 2rem;
+  }
